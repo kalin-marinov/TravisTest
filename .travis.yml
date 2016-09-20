@@ -1,10 +1,10 @@
 language: ruby
 rvm:
   - 2.2.5
-  - 2.3
 
 before_script:
   - gem install -v 1.10.6 bundler --no-rdoc --no-ri
-  - gem install rails
+  - gem --version
   - bundle update
 
+install: gem install rails
