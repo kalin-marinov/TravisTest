@@ -6,5 +6,11 @@ before_script:
   - gem install -v 1.10.6 bundler --no-rdoc --no-ri
   - gem --version
   - bundle update
+  - rake db::setup
 
 install: gem install rails
+
+env:
+  - "MOLLIE=test_T7ujPPS7gNkWdwwH5UbVKdrWpA2Wsx"
+  - "RACK_ENV=development"
+  - "PLUGIFY_URL = dev.plugify.nl"
